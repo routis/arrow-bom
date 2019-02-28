@@ -26,343 +26,173 @@
         <developerConnection>scm:git:ssh://git@github.com/arrow-kt/arrow.git</developerConnection>
         <url>https://github.com/arrow-kt/arrow/</url>
     </scm>
-    <properties>
-        <arrow.version>0.8.2</arrow.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-ank</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-annotations</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-core</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-dagger</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-data</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-data-instances-effects</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-docs</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-instances</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-kotlinx-coroutines</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-kotlinx-coroutines-instances</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-reactor</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-reactor-instances</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-rx2</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-effects-rx2-instances</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-free</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-generic</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-instances-core</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-instances-data</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-instances-free</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-instances-recursion</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-integration-retrofit-adapter</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-kindedj</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-mtl</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-optics</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-query-language</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-recursion</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-reflect</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-streams</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-syntax</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-test</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-typeclasses</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.arrow-kt</groupId>
-            <artifactId>arrow-validation</artifactId>
-            <version>${arrow.version}</version>
-        </dependency>
-    </dependencies>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-ank</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-annotations</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-core</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-dagger</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-data</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-data-instances-effects</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-docs</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-instances</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-kotlinx-coroutines</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-kotlinx-coroutines-instances</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-reactor</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-reactor-instances</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-rx2</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-rx2-instances</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-free</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-generic</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-instances-core</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-instances-data</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-instances-free</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-instances-recursion</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-integration-retrofit-adapter</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-kindedj</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-mtl</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-optics</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-query-language</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-recursion</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-reflect</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-streams</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-syntax</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-test</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-typeclasses</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-validation</artifactId>
-                <version>${arrow.version}</version>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
