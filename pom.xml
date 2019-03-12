@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.arrow-kt</groupId>
     <artifactId>arrow-bom</artifactId>
-    <version>0.8.2</version>
+    <version>0.9.0</version>
     <name>Arrow Core BOM</name>
     <description>Functional companion to Kotlin's Standard Library</description>
     <url>https://github.com/arrow-kt/arrow/</url>
@@ -41,7 +41,17 @@
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-core</artifactId>
+                <artifactId>arrow-core-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-extras-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-extras-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -56,84 +66,65 @@
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-data-instances-effects</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-docs</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects</artifactId>
+                <artifactId>arrow-effects-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-instances</artifactId>
+                <artifactId>arrow-effects-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-kotlinx-coroutines</artifactId>
+                <artifactId>arrow-effects-io-extensions</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-effects-reactor-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-kotlinx-coroutines-instances</artifactId>
+                <artifactId>arrow-effects-reactor-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-reactor</artifactId>
+                <artifactId>arrow-effects-rx2-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-reactor-instances</artifactId>
+                <artifactId>arrow-effects-rx2-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <!-- Currently missing from central maven repo -->
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-rx2</artifactId>
+                <artifactId>arrow-effects-kotlinx-coroutines-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <!-- Currently missing from central maven repo -->
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-rx2-instances</artifactId>
+                <artifactId>arrow-effects-kotlinx-coroutines-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-free</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-generic</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-instances-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-instances-data</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-instances-free</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-instances-recursion</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-integration-retrofit-adapter</artifactId>
@@ -161,9 +152,25 @@
             </dependency>
             <dependency>
                 <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-recursion</artifactId>
+                <artifactId>arrow-free-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-free-extensions</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-recursion-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.arrow-kt</groupId>
+                <artifactId>arrow-recursion-extensions</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-reflect</artifactId>
