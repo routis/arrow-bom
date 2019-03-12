@@ -84,7 +84,6 @@
                 <artifactId>arrow-effects-io-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-effects-reactor-data</artifactId>
@@ -105,26 +104,11 @@
                 <artifactId>arrow-effects-rx2-extensions</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
-            <!-- Currently missing from central maven repo -->
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-kotlinx-coroutines-data</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <!-- Currently missing from central maven repo -->
-            <dependency>
-                <groupId>io.arrow-kt</groupId>
-                <artifactId>arrow-effects-kotlinx-coroutines-extensions</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-generic</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>io.arrow-kt</groupId>
                 <artifactId>arrow-integration-retrofit-adapter</artifactId>
